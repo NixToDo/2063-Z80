@@ -1,5 +1,7 @@
 # Retro Z80 CPU Board
 
+This project is a small changed copy of the great design from John Winans. I have added a J3A1 connector to get the IORQ_50, IORQ_60 and SIO_IEO from the PCB.
+
 This project was designed to run CP/M 2.2 from an SD card.  It should be an attainable goal for anyone that can solder through-hole parts to assemble it. Note that J10 is an optional header that allows a Sparkfun SD card breakout board [DEV-13743](https://www.digikey.com/en/products/detail/sparkfun-electronics/DEV-13743/5881845) to used instead of soldering on the surface-mount SD socket part.
 
 ## Where to get Boards & Software

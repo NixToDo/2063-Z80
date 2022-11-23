@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:2063-Z80-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -770,10 +771,6 @@ Wire Wire Line
 Text Label 14100 1400 2    50   ~ 0
 DISC_LED
 Wire Wire Line
-	16200 5700 15850 5700
-Wire Wire Line
-	16200 5600 15850 5600
-Wire Wire Line
 	16200 5500 15850 5500
 Wire Wire Line
 	16200 5400 15850 5400
@@ -785,26 +782,26 @@ Wire Wire Line
 	16200 5100 15850 5100
 Wire Wire Line
 	16200 5000 15850 5000
-Text Label 15000 6300 0    50   ~ 0
-D0
-Text Label 15000 6400 0    50   ~ 0
-D1
+Wire Wire Line
+	16200 4900 15850 4900
+Wire Wire Line
+	16200 4800 15850 4800
 Text Label 15000 6100 0    50   ~ 0
-D2
-Text Label 15000 5700 0    50   ~ 0
-D3
-Text Label 15000 5600 0    50   ~ 0
-D4
-Text Label 15000 5800 0    50   ~ 0
-D5
-Text Label 15000 5900 0    50   ~ 0
-D6
+D0
 Text Label 15000 6200 0    50   ~ 0
+D1
+Text Label 15000 5900 0    50   ~ 0
+D2
+Text Label 15000 5500 0    50   ~ 0
+D3
+Text Label 15000 5400 0    50   ~ 0
+D4
+Text Label 15000 5600 0    50   ~ 0
+D5
+Text Label 15000 5700 0    50   ~ 0
+D6
+Text Label 15000 6000 0    50   ~ 0
 D7
-Wire Wire Line
-	15350 6500 15000 6500
-Wire Wire Line
-	15350 6400 15000 6400
 Wire Wire Line
 	15350 6300 15000 6300
 Wire Wire Line
@@ -812,11 +809,11 @@ Wire Wire Line
 Wire Wire Line
 	15350 6100 15000 6100
 Wire Wire Line
-	15350 6000 14800 6000
+	15350 6000 15000 6000
 Wire Wire Line
 	15350 5900 15000 5900
 Wire Wire Line
-	15350 5800 15000 5800
+	15350 5800 14800 5800
 Wire Wire Line
 	15350 5700 15000 5700
 Wire Wire Line
@@ -833,68 +830,72 @@ Wire Wire Line
 	15350 5100 15000 5100
 Wire Wire Line
 	15350 5000 15000 5000
-Text Label 16200 6000 2    50   ~ 0
-A0
-Text Label 16200 5900 2    50   ~ 0
-A1
+Wire Wire Line
+	15350 4900 15000 4900
+Wire Wire Line
+	15350 4800 15000 4800
 Text Label 16200 5800 2    50   ~ 0
-A2
+A0
 Text Label 16200 5700 2    50   ~ 0
-A3
+A1
 Text Label 16200 5600 2    50   ~ 0
-A4
+A2
 Text Label 16200 5500 2    50   ~ 0
-A5
+A3
 Text Label 16200 5400 2    50   ~ 0
-A6
+A4
 Text Label 16200 5300 2    50   ~ 0
-A7
+A5
 Text Label 16200 5200 2    50   ~ 0
-A8
+A6
 Text Label 16200 5100 2    50   ~ 0
-A9
+A7
 Text Label 16200 5000 2    50   ~ 0
+A8
+Text Label 16200 4900 2    50   ~ 0
+A9
+Text Label 16200 4800 2    50   ~ 0
 A10
-Text Label 15000 5000 0    50   ~ 0
+Text Label 15000 4800 0    50   ~ 0
 A11
-Text Label 15000 5100 0    50   ~ 0
+Text Label 15000 4900 0    50   ~ 0
 A12
-Text Label 15000 5200 0    50   ~ 0
+Text Label 15000 5000 0    50   ~ 0
 A13
-Text Label 15000 5300 0    50   ~ 0
+Text Label 15000 5100 0    50   ~ 0
 A14
-Text Label 15000 5400 0    50   ~ 0
+Text Label 15000 5200 0    50   ~ 0
 A15
 Wire Wire Line
-	15850 6000 16200 6000
-Wire Wire Line
 	15850 5800 16200 5800
-Text Label 15000 6500 0    50   ~ 0
+Wire Wire Line
+	15850 5600 16200 5600
+Text Label 15000 6300 0    50   ~ 0
 ~INT
 Wire Wire Line
-	15850 6300 16200 6300
-Text Label 16200 6900 2    50   ~ 0
+	15850 6100 16200 6100
+Text Label 16200 6700 2    50   ~ 0
 ~RD
 Wire Wire Line
-	15850 6400 16200 6400
-Text Label 16200 6800 2    50   ~ 0
+	15850 6200 16200 6200
+Text Label 16200 6600 2    50   ~ 0
 ~WR
 Wire Wire Line
-	15850 6500 16200 6500
-Text Label 15000 6800 0    50   ~ 0
+	15850 6300 16200 6300
+Text Label 15000 6600 0    50   ~ 0
 ~MREQ
 Wire Wire Line
-	15850 6600 16200 6600
-Text Label 15000 6900 0    50   ~ 0
+	15850 6400 16200 6400
+Text Label 15000 6700 0    50   ~ 0
 ~IORQ
 Wire Wire Line
-	15850 5900 16200 5900
-Text Label 15000 5500 0    50   ~ 0
+	15850 5700 16200 5700
+Text Label 15000 5300 0    50   ~ 0
 CLK
-Text Label 16200 6300 2    50   ~ 0
+Text Label 16200 6100 2    50   ~ 0
 ~M1
 Wire Wire Line
-	15850 6200 16200 6200
+	15850 6000 16200 6000
 Text Label 8100 5500 0    50   ~ 0
 ~RFSH
 Wire Wire Line
@@ -911,25 +912,25 @@ Wire Wire Line
 	8100 6800 8450 6800
 Text Label 8100 6800 0    50   ~ 0
 ~BUSACK
-Text Label 16200 6200 2    50   ~ 0
+Text Label 16200 6000 2    50   ~ 0
 ~RFSH
 Wire Wire Line
-	15000 6600 15350 6600
-Text Label 16200 6600 2    50   ~ 0
+	15000 6400 15350 6400
+Text Label 16200 6400 2    50   ~ 0
 ~WAIT
 Wire Wire Line
-	15000 6700 15350 6700
-Text Label 15000 6700 0    50   ~ 0
+	15000 6500 15350 6500
+Text Label 15000 6500 0    50   ~ 0
 ~HALT
 Wire Wire Line
-	15000 6800 15350 6800
+	15000 6600 15350 6600
 Wire Wire Line
-	15850 6900 16200 6900
-Text Label 16200 6500 2    50   ~ 0
+	15850 6700 16200 6700
+Text Label 16200 6300 2    50   ~ 0
 ~BUSRQ
 Wire Wire Line
-	15850 6800 16200 6800
-Text Label 16200 6700 2    50   ~ 0
+	15850 6600 16200 6600
+Text Label 16200 6500 2    50   ~ 0
 ~BUSACK
 Text Label 8100 5000 0    50   ~ 0
 ~NMI
@@ -945,41 +946,41 @@ F 3 "" H 7700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15850 6100 16400 6100
-Text Label 15000 6600 0    50   ~ 0
+	15850 5900 16400 5900
+Text Label 15000 6400 0    50   ~ 0
 ~NMI
-Text Label 16200 6400 2    50   ~ 0
+Text Label 16200 6200 2    50   ~ 0
 ~RESET
 Wire Wire Line
-	15850 6700 16200 6700
+	15850 6500 16200 6500
 Wire Wire Line
-	15350 6900 15000 6900
+	15350 6700 15000 6700
 $Comp
 L power:GND #PWR0123
 U 1 1 61EEBF04
-P 16400 6150
-F 0 "#PWR0123" H 16400 5900 50  0001 C CNN
-F 1 "GND" H 16405 5977 50  0000 C CNN
-F 2 "" H 16400 6150 50  0001 C CNN
-F 3 "" H 16400 6150 50  0001 C CNN
-	1    16400 6150
+P 16400 5950
+F 0 "#PWR0123" H 16400 5700 50  0001 C CNN
+F 1 "GND" H 16405 5777 50  0000 C CNN
+F 2 "" H 16400 5950 50  0001 C CNN
+F 3 "" H 16400 5950 50  0001 C CNN
+	1    16400 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0124
 U 1 1 61EEF1FE
-P 14800 5950
-F 0 "#PWR0124" H 14800 5800 50  0001 C CNN
-F 1 "+5V" H 14815 6123 50  0000 C CNN
-F 2 "" H 14800 5950 50  0001 C CNN
-F 3 "" H 14800 5950 50  0001 C CNN
-	1    14800 5950
+P 14800 5750
+F 0 "#PWR0124" H 14800 5600 50  0001 C CNN
+F 1 "+5V" H 14815 5923 50  0000 C CNN
+F 2 "" H 14800 5750 50  0001 C CNN
+F 3 "" H 14800 5750 50  0001 C CNN
+	1    14800 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14800 6000 14800 5950
+	14800 5800 14800 5750
 Wire Wire Line
-	16400 6100 16400 6150
+	16400 5900 16400 5950
 Wire Wire Line
 	14550 1700 14550 1750
 Wire Wire Line
@@ -1011,7 +1012,7 @@ NoConn ~ 15050 1200
 NoConn ~ 15050 1300
 Text Notes 14650 1900 0    118  ~ 24
 USB Power Only
-Text Notes 14750 7200 0    118  ~ 24
+Text Notes 14750 7300 0    118  ~ 24
 Z80 Pins Breakout
 Wire Wire Line
 	8100 6700 8450 6700
@@ -1720,8 +1721,6 @@ F 3 "" H 12700 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12700 4000 12700 4050
-NoConn ~ 2200 6650
-NoConn ~ 2200 6750
 Text Notes 1900 7250 0    118  ~ 24
 I/O port decode
 Text Notes 11500 8950 0    118  ~ 24
@@ -1770,7 +1769,6 @@ Wire Wire Line
 	3500 6050 4200 6050
 Text Notes 12300 9850 0    39   ~ 0
 Copyright (C) 2021 John Winans\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\n\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). \nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, \nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.  Please see the CERN OHL v.1.2 for applicable conditions\n\nIf you chose to manufacture products based on this design, please notify me (see license section 4.2) via john@winans.org\n
-NoConn ~ 11550 6350
 Text Label 11550 5900 0    50   ~ 0
 A0
 Text Label 11550 5800 0    50   ~ 0
@@ -3170,7 +3168,7 @@ F 7 "Panasonic Electronic Components" H 10750 1050 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jb-symbol:Z80CPU U1
+L 2063-Z80-rescue:Z80CPU-jb-symbol-2063-Z80-rescue U1
 U 1 1 61522127
 P 9150 5600
 F 0 "U1" H 9500 7200 50  0000 C CNN
@@ -3247,20 +3245,20 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x20_Counter_Clockwise J3
 U 1 1 61F13B3D
-P 15550 5900
-F 0 "J3" H 15600 6950 50  0000 C CNN
-F 1 "Conn_02x20" H 15600 6926 50  0001 C CNN
-F 2 "jb-footprint:PinHeader_2x20_P2.54mm_Vertical_counterclock" H 15550 5900 50  0001 C CNN
-F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 15550 5900 50  0001 C CNN
-F 4 "PRPC020DAAN-RC" H 15550 5900 50  0001 C CNN "Description"
-F 5 "S2011EC-20-ND" H 15550 5900 50  0001 C CNN "Digi-Key_PN"
-F 6 "PRPC020DAAN-RC" H 15550 5900 50  0001 C CNN "MPN"
-F 7 "Sullins Connector Solutions" H 15550 5900 50  0001 C CNN "Manufacturer"
-	1    15550 5900
+P 15550 5700
+F 0 "J3" H 15600 6750 50  0000 C CNN
+F 1 "Conn_02x20" H 15600 6726 50  0001 C CNN
+F 2 "jb-footprint:PinHeader_2x20_P2.54mm_Vertical_counterclock" H 15550 5700 50  0001 C CNN
+F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 15550 5700 50  0001 C CNN
+F 4 "PRPC020DAAN-RC" H 15550 5700 50  0001 C CNN "Description"
+F 5 "S2011EC-20-ND" H 15550 5700 50  0001 C CNN "Digi-Key_PN"
+F 6 "PRPC020DAAN-RC" H 15550 5700 50  0001 C CNN "MPN"
+F 7 "Sullins Connector Solutions" H 15550 5700 50  0001 C CNN "Manufacturer"
+	1    15550 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_USB-DVI-HDMI-Connectors:0548190519 J6
+L 2063-Z80-rescue:0548190519-dk_USB-DVI-HDMI-Connectors-2063-Z80-rescue J6
 U 1 1 611986BF
 P 14750 1200
 F 0 "J6" H 14775 1852 60  0000 C CNN
@@ -3340,7 +3338,7 @@ F 7 "Sullins Connector Solutions" H 15550 3650 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jb-symbol:Z80-SIO-0 U5
+L 2063-Z80-rescue:Z80-SIO-0-jb-symbol-2063-Z80-rescue U5
 U 1 1 6225CFF1
 P 12700 5550
 F 0 "U5" H 13250 7150 50  0000 C CNN
@@ -3370,7 +3368,7 @@ F 7 "Hirose Electric Co Ltd" H 14850 8200 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jb-symbol:LM1117-3.3 U20
+L 2063-Z80-rescue:LM1117-3.3-jb-symbol-2063-Z80-rescue U20
 U 1 1 642BFAB2
 P 11700 900
 F 0 "U20" H 11700 1142 50  0000 C CNN
@@ -3501,7 +3499,7 @@ F 7 "Bourns Inc." H 10850 6900 50  0001 C CNN "Manufacturer"
 	0    1    1    0   
 $EndComp
 $Comp
-L dk_Tactile-Switches:1825910-6 S1
+L 2063-Z80-rescue:1825910-6-dk_Tactile-Switches-2063-Z80-rescue S1
 U 1 1 61706891
 P 10350 2850
 F 0 "S1" H 10350 3197 60  0000 C CNN
@@ -3641,7 +3639,7 @@ F 7 "Stackpole Electronics Inc" H 7700 2450 50  0001 C CNN "Manufacturer"
 	-1   0    0    1   
 $EndComp
 $Comp
-L jb-symbol:Z80_CTC U4
+L 2063-Z80-rescue:Z80_CTC-jb-symbol-2063-Z80-rescue U4
 U 1 1 613037B2
 P 6850 6600
 F 0 "U4" H 7200 7700 50  0000 C CNN
@@ -4424,4 +4422,36 @@ F 3 "~" H 5200 4100 50  0001 C CNN
 	1    5200 4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	15850 6850 16200 6850
+Wire Wire Line
+	15350 6850 15000 6850
+Wire Wire Line
+	2200 6650 2500 6650
+Wire Wire Line
+	2200 6750 2500 6750
+Text Label 2500 6650 2    50   ~ 0
+~IORQ_50
+Text Label 2500 6750 2    50   ~ 0
+~IORQ_60
+Text Label 15000 6850 0    50   ~ 0
+~IORQ_50
+Text Label 16200 6850 2    50   ~ 0
+~IORQ_60
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3A1
+U 1 1 63B1588F
+P 15550 6850
+F 0 "J3A1" H 15600 6650 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 15600 6976 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 15550 6850 50  0001 C CNN
+F 3 "~" H 15550 6850 50  0001 C CNN
+	1    15550 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15350 6950 15000 6950
+Text Label 15000 6950 0    50   ~ 0
+SIO_IEO
+NoConn ~ 15850 6950
 $EndSCHEMATC
